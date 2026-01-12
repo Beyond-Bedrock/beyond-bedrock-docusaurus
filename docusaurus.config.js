@@ -40,13 +40,14 @@ export default {
       {
         redirects: [
           // Hardcoded redirects from the old website
-          //{from: '/posts/elevator-addon-v2-be-any-block--ebca8d80', to: '/addons/elevator-addon-v2',},
-          //{from: '/posts/player-heads-generator-3f5310a5', to: '/addons/player-heads-generator',},
-          //{from: '/posts/mobs-jar-add-on-v1-12190-hold-mobs-anywhere-288959be', to: '/addons/mobs-jar-addon',},
-          //{from: '/posts/useful-slime-add-on-12190-a59e8001', to: '/addons/useful-slime-addon',},
-          //{from: '/posts/teams-addon-beta--8a216803', to: '/addons/teams-addon-beta',},
-          //{from: '/posts/arabic-language-fix-add-on-83e84772', to: '/addons/arabic-language-fix-addon',},
-          //{from: '/posts/statistics-add-on-121-12130--ae56c092', to: '/addons/statistics-add-on',},
+          {from: '/posts/statistics-add-on-121-12130--ae56c092', to: '/addons/statistics-add-on',},
+          {from: '/posts/way-point-lodestone-travel-any-where--61b0ec01', to: '/addons/way-point-lodestone',},
+          {from: '/posts/elevator-addon-v2-be-any-block--ebca8d80', to: '/addons/elevator-addon-v2',},
+          {from: '/posts/player-heads-generator-3f5310a5', to: '/addons/player-heads-generator',},
+          {from: '/posts/mobs-jar-add-on-v1-12190-hold-mobs-anywhere-288959be', to: '/addons/mobs-jar-addon',},
+          {from: '/posts/useful-slime-add-on-12190-a59e8001', to: '/addons/useful-slime-addon',},
+          {from: '/posts/teams-addon-beta--8a216803', to: '/addons/teams-addon-beta',},
+          {from: '/posts/arabic-language-fix-add-on-83e84772', to: '/addons/arabic-language-fix-addon',},
         ],
       },
     ],
