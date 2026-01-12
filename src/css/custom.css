@@ -1,0 +1,59 @@
+:root {
+  --ifm-color-primary-transparent: hsl(203, 100%, 34%, 0.75);
+  --ifm-color-primary: hsl(194, 100%, 70%);
+  --ifm-color-primary-dark: hsl(194, 100%, 66%);
+  --ifm-color-primary-darker: hsl(194, 100%, 60%);
+  --ifm-color-primary-darkest: hsl(194, 100%, 36%);
+  --ifm-color-primary-light: hsl(194, 100%, 75%);
+  --ifm-color-primary-lighter: hsl(194, 100%, 77%);
+  --ifm-color-primary-lightest: hsl(194, 100%, 80%);
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(18, 12, 12, 0.1);
+
+  --minato-background: linear-gradient(135deg, #6addd1 0%, #ddffff 100%);
+  --mevo-background: linear-gradient(45deg, #ebc59f 0%, #ffefdf 100%);
+  --mz3g-background: linear-gradient(135deg, #ffd7e4 0%, #ef92a6 100%);
+  --team-bg-border-color: rgb(0, 0, 0);
+  --ifm-image-filter: unset;
+
+  --discord-background: linear-gradient(135deg, #ffffff 0%, #d5daff 100%);
+  --email-background: linear-gradient(135deg, #ffffff 0%, #ffdfd1 100%);
+  --x-background: linear-gradient(135deg, #ffffff 0%, #cacaca 100%);
+  --youtube-background: linear-gradient(135deg, #ffffff 0%, #ffd0d0 100%);
+  --github-background: linear-gradient(135deg, #ffffff 0%, #e8ddff 100%);
+
+  --ifm-color-emphasis200: rgba(0, 0, 0, 0.1);
+
+  /* Hero background image */
+  --hero-background: url('/img/hero-bg.svg');
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary-transparent: hsla(203, 100%, 42%, 0.75);
+  --ifm-color-primary: hsl(194, 100%, 45%);
+  --ifm-color-primary-dark: hsl(194, 100%, 41%);
+  --ifm-color-primary-darker: hsl(194, 100%, 38%);
+  --ifm-color-primary-darkest: hsl(194, 100%, 32%);
+  --ifm-color-primary-light: hsl(194, 100%, 50%);
+  --ifm-color-primary-lighter: hsl(194, 100%, 52%);
+  --ifm-color-primary-lightest: hsl(194, 100%, 59%);
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --minato-background: linear-gradient(135deg, #006057 0%, #000606 100%);
+  --mevo-background: linear-gradient(45deg, #cb7115 0%, #170c00 100%);
+  --mz3g-background: linear-gradient(135deg, #040102 0%, #782033 100%);
+  --team-bg-border-color: rgb(255, 255, 255);
+  --ifm-image-filter: brightness(0) invert(1);
+
+  --discord-background: linear-gradient(135deg, #0e112b 0%, #2a38a4 100%);
+  --email-background: linear-gradient(135deg, #3e140f 0%, #a83427 100%);
+  --x-background: linear-gradient(135deg, #000000 0%, #323232 100%);
+  --youtube-background: linear-gradient(135deg, #4e0000 0%, #b20000 100%);
+  --github-background: linear-gradient(135deg, #130e1c 0%, #3b2c5a 100%);
+  
+  --ifm-color-emphasis200: rgba(0, 0, 0, 0.4);
+
+  --hero-background: url('/img/hero-bg-dark.svg');
+}

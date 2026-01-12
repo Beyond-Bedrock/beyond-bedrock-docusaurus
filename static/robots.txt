@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Prioritize important content
+Allow: /addons/
+Allow: /resource-packs/
+Allow: /maps/
+Allow: /guides/
+
+# Allow image indexing
+Allow: /img/
+Allow: /static/
+
+# Block admin and development paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /__/
+Disallow: /search
+
+# Sitemap location
+Sitemap: https://beyondbedrock.org/sitemap.xml
+
+# Crawl delay (optional, for respectful crawling)
+Crawl-delay: 1

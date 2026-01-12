@@ -1,0 +1,163 @@
+name: New Content Validation
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - 'src/pages/**/*.md'
+      - '.github/workflows/new-content.yml'
+      - 'scripts/classify-changes.mjs'
+      - 'contributors.json'
+
+jobs:
+  validate-new-content:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: |
+        npm ci
+        npm install gray-matter
+
+    - name: Classify changes
+      id: changes
+      run: |
+        node scripts/classify-changes.mjs >> $GITHUB_OUTPUT
+
+    - name: Verify new content (if applicable)
+      if: steps.changes.outputs.MODE == 'new'
+      run: |
+        # Get list of new markdown files
+        FILES=$(git diff --name-status origin/${{ github.base_ref }}...HEAD | grep '^A.*\.md$' | awk '{print $2}')
+        
+        for file in $FILES; do
+          echo "Validating new content: $file"
+          
+          # Check if file has required frontmatter
+          if ! grep -q '^---' "$file"; then
+            echo "::error file=$file,title=Missing Frontmatter::New content must include frontmatter (start and end with ---)"
+            exit 1
+          fi
+          
+          # Check if file is in the correct directory
+          if [[ ! "$file" =~ ^src/pages/[^/]+/.*\.md$ ]]; then
+            echo "::error file=$file,title=Invalid Location::Content must be placed in a section directory under src/pages/"
+            exit 1
+          fi
+          
+          # Extract and validate frontmatter using node
+          node -e "
+            const fs = require('fs');
+            const matter = require('gray-matter');
+            const path = require('path');
+            
+            const content = fs.readFileSync('$file', 'utf8');
+            const { data } = matter(content);
+            const filename = path.basename('$file', '.md');
+            
+            // Required fields
+            const required = ['id', 'title', 'description'];
+            for (const field of required) {
+              if (!data[field]) {
+                console.error(\`::error file=$file,title=Missing Required Field::Required field '\${field}' is missing\`);
+                process.exit(1);
+              }
+            }
+            
+            // Validate ID matches filename
+            if (data.id !== filename) {
+              console.error(\`::error file=$file,title=ID Mismatch::Frontmatter id '\${data.id}' does not match filename '\${filename}'\`);
+              process.exit(1);
+            }
+            
+            // Validate numeric fields
+            const numericFields = ['downloads', 'rating'];
+            for (const field of numericFields) {
+              if (data[field] !== undefined && (typeof data[field] !== 'number' || isNaN(data[field]))) {
+                console.error(\`::error file=$file,title=Invalid Field Type::Field '\${field}' must be a number\`);
+                process.exit(1);
+              }
+            }
+            
+            // Validate date format
+            if (data.lastUpdated) {
+              const date = new Date(data.lastUpdated);
+              if (isNaN(date.getTime())) {
+                console.error(\`::error file=$file,title=Invalid Date Format::lastUpdated must be a valid ISO 8601 date\`);
+                process.exit(1);
+              }
+            }
+            
+            // Validate arrays
+            const arrayFields = ['tags', 'contributors'];
+            for (const field of arrayFields) {
+              if (data[field] !== undefined && !Array.isArray(data[field])) {
+                console.error(\`::error file=$file,title=Invalid Field Type::Field '\${field}' must be an array\`);
+                process.exit(1);
+              }
+            }
+          "
+        done
+
+    - name: Check for JSON modifications
+      run: |
+        JSON_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep '^static/.*\.json$' || true)
+        if [ -n "$JSON_FILES" ]; then
+          for file in $JSON_FILES; do
+            echo "::error file=$file,title=Direct JSON Modification::Direct JSON modifications are not allowed. Please modify the source Markdown files instead."
+          done
+          exit 1
+        fi
+
+    - name: Validate images
+      run: |
+        # Check for new images outside of post directories
+        NEW_IMAGES=$(git diff --name-status origin/${{ github.base_ref }}...HEAD | grep -i '\.\(png\|jpg\|jpeg\|webp\|gif\)$' | grep '^A' | awk '{print $2}')
+        
+        for img in $NEW_IMAGES; do
+          # Allow author avatars in static/img/authors/
+          if [[ "$img" =~ ^static/img/authors/.*\.(webp|png|jpg|jpeg|gif)$ ]]; then
+            continue
+          fi
+          
+          # All other images must be in format static/img/<section>/<slug>/filename.(webp|png|jpg|jpeg|gif)
+          if [[ ! "$img" =~ ^static/img/[^/]+/[^/]+/.*\.(webp|png|jpg|jpeg|gif)$ ]]; then
+            echo "::error file=$img,title=Invalid Image Path::Images must be in format static/img/<section>/<slug>/filename.(webp|png|jpg|jpeg|gif) or static/img/authors/filename.(webp|png|jpg|jpeg|gif) for author avatars"
+            exit 1
+          fi
+          
+          # Check file size (3MB limit)
+          FILESIZE=$(stat -c%s "$img")
+          if [ $FILESIZE -gt 3145728 ]; then
+            echo "::error file=$img,title=Image Too Large::Image exceeds 3MB size limit (current size: $((FILESIZE / 1024 / 1024))MB)"
+            exit 1
+          fi
+        done
+
+    - name: Generate catalog files
+      if: steps.changes.outputs.MODE == 'new'
+      run: |
+        node scripts/generate-catalog.js
+
+    - name: Commit catalog files
+      if: steps.changes.outputs.MODE == 'new'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add static/**/*.json
+        git diff --staged --quiet || git commit -m "Auto-update catalog files for new content"
+        git push origin HEAD:${{ github.head_ref }}

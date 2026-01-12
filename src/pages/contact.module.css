@@ -1,0 +1,78 @@
+.contactMethods {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.contactCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contactCard {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius);
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.contactCard:hover {
+  box-shadow: var(--ifm-card-shadow);
+  transform: translateY(-4px);
+}
+
+.contactIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactIcon img {
+  width: 70px;
+  height: 70px;
+  filter: var(--ifm-image-filter);
+}
+
+.contactCard:nth-of-type(1):hover {background: var(--discord-background);}
+.contactCard:nth-of-type(2):hover {background: var(--email-background);}
+.contactCard:nth-of-type(3):hover {background: var(--x-background);}
+.contactCard:nth-of-type(4):hover {background: var(--github-background);}
+.contactCard:nth-of-type(5):hover {background: var(--youtube-background);}
+
+.contactCard h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.contactCard p {
+  margin: 0 0 1rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.contactEmail {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.1em;
+  background: var(--ifm-color-emphasis200);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+/* Responsive */
+@media screen and (max-width: 996px) {
+  .contactMethods {
+    padding: 2rem 0;
+  }
+  
+  .contactCards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
