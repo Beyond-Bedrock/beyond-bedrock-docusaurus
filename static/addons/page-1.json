@@ -21,7 +21,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Arabic Language Fix Add-on\r\n\r\n<div align=\"right\">\r\nمود بسيط يقوم بإصلاح مشكل عدم دعم ماينكرافت بيدروك للغة العربية.<br>\r\nلا شك أنك عانيت من صعوبة التواصل باللغة العربية في المحادثات داخل اللعبة، أ...",
+    "content": "\n# Arabic Language Fix Add-on\n\n<div align=\"right\">\nمود بسيط يقوم بإصلاح مشكل عدم دعم ماينكرافت بيدروك للغة العربية.<br>\nلا شك أنك عانيت من صعوبة التواصل باللغة العربية في المحادثات داخل اللعبة، أو من ...",
     "image": "img/addons/arabic-language-fix-addon/thumbnail.webp"
   },
   {
@@ -47,7 +47,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Elevator Add-on V2\r\n\r\n![Minecraft Title](/img/addons/elevator-addon-v2/minecraft-title.webp)\r\n\r\n🔸Are you tired of climbing ladders every time you build a high building?\r\n\r\n🔸Is using stairs make ...",
+    "content": "\n# Elevator Add-on V2\n\n![Minecraft Title](/img/addons/elevator-addon-v2/minecraft-title.webp)\n\n🔸Are you tired of climbing ladders every time you build a high building?\n\n🔸Is using stairs make your bu...",
     "image": "img/addons/elevator-addon-v2/thumbnail.webp"
   },
   {
@@ -73,7 +73,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Mobs Jar Add-on\r\n\r\n![Minecraft Title](/img/addons/mobs-jar-addon/minecraft-title.webp)\r\n\r\n🔸Did you get tired trying to bring animals to your farm?\r\n\r\n🔸Or had enough of trying to get villagers to...",
+    "content": "\n# Mobs Jar Add-on\n\n![Minecraft Title](/img/addons/mobs-jar-addon/minecraft-title.webp)\n\n🔸Did you get tired trying to bring animals to your farm?\n\n🔸Or had enough of trying to get villagers to your b...",
     "image": "img/addons/mobs-jar-addon/thumbnail.webp"
   },
   {
@@ -99,7 +99,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Player Heads Generator\r\n\r\nThis tool allows you to easily create and manage custom player head packs for Minecraft Bedrock. Enter a Minecraft username and upload a skin texture to generate a ready-...",
+    "content": "\n# Player Heads Generator\n\nThis tool allows you to easily create and manage custom player head packs for Minecraft Bedrock. Enter a Minecraft username and upload a skin texture to generate a ready-to-...",
     "image": "img/addons/player-heads-generator/thumbnail.webp"
   },
   {
@@ -126,7 +126,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Statistics Add-on\r\n\r\nStatistics Supplement. It is an add-on that you can use to see your stats and progress in the world or on a server. It is divided into Statistics and Top.\r\n\r\n## Features Stati...",
+    "content": "\n# Statistics Add-on\n\nStatistics Supplement. It is an add-on that you can use to see your stats and progress in the world or on a server. It is divided into Statistics and Top.\n\n## Features Statistics...",
     "image": "img/addons/statistics-add-on/thumbnail.webp"
   },
   {
@@ -152,7 +152,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Teams Add-on Beta\r\n\r\n=== English Description ===\r\n\r\nTeams Add-on: The Ultimate Faction & Clan System for Minecraft\r\n\r\nThis add-on, created by FlaxonStudio, introduces a comprehensive and feature-r...",
+    "content": "\n# Teams Add-on Beta\n\n=== English Description ===\n\nTeams Add-on: The Ultimate Faction & Clan System for Minecraft\n\nThis add-on, created by FlaxonStudio, introduces a comprehensive and feature-rich tea...",
     "image": "img/addons/teams-addon-beta/thumbnail.webp"
   },
   {
@@ -179,7 +179,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Useful Slime Add-on\r\n\r\nUseful Slime is Add-on that adds tools to reduce fall damage, launch yourself across long distances, and discover floating islands — making survival gameplay faster, safer, ...",
+    "content": "\n# Useful Slime Add-on\n\nUseful Slime is Add-on that adds tools to reduce fall damage, launch yourself across long distances, and discover floating islands — making survival gameplay faster, safer, and...",
     "image": "img/addons/useful-slime-addon/thumbnail.webp"
   },
   {
@@ -205,7 +205,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Way Point Lodestone\r\n\r\n![WayPoint Title](/img/addons/way-point-lodestone/waypoint-title.webp)\r\n\r\n🔸Are you tired of travelling hundred or thousands of blocks every time you play in your world, ser...",
+    "content": "\n# Way Point Lodestone\n\n![WayPoint Title](/img/addons/way-point-lodestone/waypoint-title.webp)\n\n🔸Are you tired of travelling hundred or thousands of blocks every time you play in your world, server a...",
     "image": "img/addons/way-point-lodestone/thumbnail.webp"
   }
 ]
