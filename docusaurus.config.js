@@ -46,6 +46,7 @@ export default {
           //{from: '/posts/useful-slime-add-on-12190-a59e8001', to: '/addons/useful-slime-addon',},
           //{from: '/posts/teams-addon-beta--8a216803', to: '/addons/teams-addon-beta',},
           //{from: '/posts/arabic-language-fix-add-on-83e84772', to: '/addons/arabic-language-fix-addon',},
+          //{from: '/posts/statistics-add-on-121-12130--ae56c092', to: '/addons/statistics-add-on',},
         ],
       },
     ],
