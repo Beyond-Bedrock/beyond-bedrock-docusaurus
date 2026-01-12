@@ -5,7 +5,7 @@ description: "Travel anywhere in your world with just one click using Lodestones
 image: img/addons/way-point-lodestone/thumbnail.webp
 author:
   name: "MZ3G"
-  avatar: img/authors/MZ3G.webp
+  avatar: img/authors/mz3g.webp
 tags:
   - game-mechanics
   - blocks
