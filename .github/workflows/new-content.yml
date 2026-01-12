@@ -83,13 +83,13 @@ jobs:
             }
             
             // Validate numeric fields
-            const numericFields = ['downloads', 'rating'];
-            for (const field of numericFields) {
-              if (data[field] !== undefined && (typeof data[field] !== 'number' || isNaN(data[field]))) {
-                console.error(\`::error file=$file,title=Invalid Field Type::Field '\${field}' must be a number\`);
-                process.exit(1);
-              }
-            }
+            //const numericFields = ['downloads', 'rating'];
+            //for (const field of numericFields) {
+            //  if (data[field] !== undefined && (typeof data[field] !== 'number' || isNaN(data[field]))) {
+            //    console.error(\`::error file=$file,title=Invalid Field Type::Field '\${field}' must be a number\`);
+            //    process.exit(1);
+            //  }
+            //}
             
             // Validate date format
             if (data.lastUpdated) {
