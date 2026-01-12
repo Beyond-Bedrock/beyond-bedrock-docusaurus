@@ -54,4 +54,4 @@ downloads:
 
 ## Downloads
 
-🔸**[Download Link (1.21.90+)](https://loot-link.com/s?FQUj8DkW)**
+**[Download Link (1.21.90+)](https://loot-link.com/s?FQUj8DkW)**

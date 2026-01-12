@@ -65,4 +65,4 @@ downloads:
 
 ## Downloads
 
-🔸**[Download Link (1.21.120+)](https://www.mediafire.com/file/wzmlmn3iyze9pmz/Ar_Lang_Fix_%25281.21.12x_%25D9%2583%25D9%2584_%25D8%25A7%25D9%2584%25D8%25A7%25D8%25B5%25D8%25AF%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA_%25D9%2581%25D9%2588%25D9%2582%2529.mcaddon/file)**
+**[Download Link (1.21.120+)](https://www.mediafire.com/file/wzmlmn3iyze9pmz/Ar_Lang_Fix_%25281.21.12x_%25D9%2583%25D9%2584_%25D8%25A7%25D9%2584%25D8%25A7%25D8%25B5%25D8%25AF%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA_%25D9%2581%25D9%2588%25D9%2582%2529.mcaddon/file)**

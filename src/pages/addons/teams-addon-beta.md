@@ -140,4 +140,4 @@ Server operators and designated admins have access to a powerful control panel t
 
 ## Downloads
 
-🔸**[Teams Addon (ALL VERSIONS)](https://flaxon-studio.mcpe.site/download/TEAMS1_21_8x.mcaddon)**
+**[Teams Addon (ALL VERSIONS)](https://flaxon-studio.mcpe.site/download/TEAMS1_21_8x.mcaddon)**

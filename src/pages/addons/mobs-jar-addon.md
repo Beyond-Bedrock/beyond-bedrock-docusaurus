@@ -44,4 +44,4 @@ https://discord.gg/eVdxXMU3R7
 
 ## Downloads
 
-🔸**[Download Link (1.21.90+)](https://lootdest.org/s?KyRbok62)**
+**[Download Link (1.21.90+)](https://lootdest.org/s?KyRbok62)**
