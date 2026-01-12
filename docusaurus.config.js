@@ -24,7 +24,7 @@ export default {
   },
 
   url: domainLink,
-  baseUrl: '/beyond-bedrock-docusaurus/', 
+  baseUrl: '/', 
 
   organizationName: 'beyond-bedrock',
   projectName: 'beyond-bedrock',
