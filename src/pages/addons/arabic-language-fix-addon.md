@@ -43,7 +43,11 @@ downloads:
 كل ما عليك هو تحميل المود وتركيبه. لا تنسى تفعيل الميزات التجريبية ليشتغل المود بالشكل الصحيح:
 </div>
 
-![Beta APIs](/img/addons/arabic-language-fix-addon/beta-apis.webp)
+<RequirementToggle
+  title='Beta APIs'
+  description='Use "-beta" versions of API modules in add-on packs'
+  required
+/>
 
 <div align="right">
 إذا واجهتك اي مشاكل في التثبيت ما عليك سوى مشاهدة الشرح المفصل لكيفية تثبيت وتشغيل المود بالشكل الصحيح:

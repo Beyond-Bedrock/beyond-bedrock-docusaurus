@@ -59,7 +59,11 @@ Using the statistics top, you can see the top 3 players in the world by each sta
 
 - Make sure that the **Beta APIS** is activated (if you don't activate it, the add-on will not work):
 
-![Beta APIs Activation](/img/addons/statistics-add-on/beta-apis-activation.webp)
+<RequirementToggle
+  title='Beta APIs'
+  description='Use "-beta" versions of API modules in add-on packs'
+  required
+/>
 
 - Write in the chat **!Menu** and exit the chat quickly:
 

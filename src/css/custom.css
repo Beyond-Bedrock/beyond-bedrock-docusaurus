@@ -57,3 +57,12 @@
 
   --hero-background: url('/img/hero-bg-dark.svg');
 }
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('https://raw.githubusercontent.com/Minato-mba/web-apps/main/content/fonts/minecraft.otf')
+       format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

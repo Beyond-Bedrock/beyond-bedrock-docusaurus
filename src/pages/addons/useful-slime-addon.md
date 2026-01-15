@@ -78,7 +78,11 @@ You can break leaves of slime tree to get slime tree saplings and plant them any
 - Install resource pack and behaviour pack
 - Make sure Beta APIs are enabled (without them Add-on will not work)
 
-![Beta APIs](/img/addons/useful-slime-addon/beta-apis.webp)
+<RequirementToggle
+  title='Beta APIs'
+  description='Use "-beta" versions of API modules in add-on packs'
+  required
+/>
 
 ## Showcase
 
