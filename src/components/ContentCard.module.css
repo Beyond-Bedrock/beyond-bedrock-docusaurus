@@ -16,6 +16,9 @@
   transform: translateY(-3px);
   box-shadow: var(--ifm-global-shadow-md);
   border-color: var(--ifm-color-primary);
+  border-width: 2px;
+  border-radius: 0 0 var(--ifm-card-border-radius) var(--ifm-card-border-radius);
+  transition: border-radius 300ms ease;
 }
 
 .cardLink:hover .imageWrap::after {
@@ -30,7 +33,6 @@
 .imageWrap {
   position: relative;
   overflow: hidden;
-  border-radius: 10px 10px 0 0;
 }
 
 .imageWrap::after {
