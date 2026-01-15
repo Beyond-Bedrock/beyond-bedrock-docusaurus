@@ -1,5 +1,38 @@
 import React from 'react';
 
+/*
+title: The text to show in the spacer
+textColor: The color of the text (default: #000). Can be a gradient.
+color: The color of the spacer line (default: #000). Can be a gradient.
+underline: Whether there is an underline below the text (default: false)
+align: The alignment of the text: 'left', 'center', or 'right' (default: 'center')
+type: The design type of the spacer.
+font: The font family of the text (default: 'Minecraft Ten')
+thickness: The thickness of the spacer line in pixels (default: 4)
+spacing: The spacing between the text and the spacer lines in pixels (default: 20)
+
+Usage Examples:
+
+<SectionSpacer 
+  title="Info"
+  type="plain"
+  thickness={8}
+  font= "Minecraft Ten"
+  color="linear-gradient(90deg, #80fe7e, #4a9b47)"
+  textColor="linear-gradient(90deg, #80fe7e, #4a9b47)"
+/>
+
+<SectionSpacer 
+  title="Features"
+  type="dots"
+  align="left"
+  color="#ff5733"
+  textColor="#ff5733"
+/>
+
+
+*/
+
 const types = [
   'plain',         // simple lines
   'dots',          // dotted pattern
