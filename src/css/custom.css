@@ -66,3 +66,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Minecraft Ten';
+  src: url('https://raw.githubusercontent.com/Minato-mba/web-apps/main/content/fonts/minecraft-ten.ttf')
+       format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

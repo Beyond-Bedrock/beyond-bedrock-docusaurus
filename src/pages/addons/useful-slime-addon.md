@@ -28,7 +28,14 @@ downloads:
 
 Useful Slime is Add-on that adds tools to reduce fall damage, launch yourself across long distances, and discover floating islands — making survival gameplay faster, safer, and more fun.
 
-![Main Image](/img/addons/useful-slime-addon/main-image.webp)
+<SectionSpacer 
+  title="Info"
+  type="plain"
+  thickness={8}
+  font= "Minecraft Ten"
+  color="linear-gradient(90deg, #80fe7e, #4a9b47)"
+  textColor="linear-gradient(90deg, #80fe7e, #4a9b47)"
+/>
 
 ## Features:
 
@@ -55,7 +62,14 @@ You can break leaves of slime tree to get slime tree saplings and plant them any
 
 ![Slime Tree Growth](/img/addons/useful-slime-addon/slime-tree-growth.webp)
 
-![Slime Environment](/img/addons/useful-slime-addon/slime-environment.webp)
+<SectionSpacer 
+  title="Crafting"
+  type="plain"
+  thickness={8}
+  font= "Minecraft Ten"
+  color="linear-gradient(90deg, #80fe7e, #4a9b47)"
+  textColor="linear-gradient(90deg, #80fe7e, #4a9b47)"
+/>
 
 ## Crafting Recipes
 
@@ -71,7 +85,14 @@ You can break leaves of slime tree to get slime tree saplings and plant them any
 
 ![Slime Ball Crafting](/img/addons/useful-slime-addon/slime-ball-crafting.webp)
 
-![Green Slime Crafting](/img/addons/useful-slime-addon/green-slime-crafting.webp)
+<SectionSpacer 
+  title="How to install"
+  type="plain"
+  thickness={8}
+  font= "Minecraft Ten"
+  color="linear-gradient(90deg, #80fe7e, #4a9b47)"
+  textColor="linear-gradient(90deg, #80fe7e, #4a9b47)"
+/>
 
 ## Installation
 
