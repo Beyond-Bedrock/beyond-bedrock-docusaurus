@@ -119,7 +119,7 @@ export default function About() {
 
         <AboutSection title="Join Us">
           <p>
-            Beyond Bedrock is more than just a website—it's a community. Whether you're a player looking for exciting new content, 
+            Beyond Bedrock is more than just a website, it's a community. Whether you're a player looking for exciting new content, 
             a creator wanting to share your work, or simply a Minecraft fan, we welcome you to join our community.
           </p>
           <p>
