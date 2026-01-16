@@ -96,6 +96,8 @@ export default {
       ],
       colorMode: {
         respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: false,
       },
       navbar: {
         title: 'Beyond Bedrock',
