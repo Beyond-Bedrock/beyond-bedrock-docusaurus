@@ -59,7 +59,7 @@ downloads:
 تستطيع ايضا تثبيت المود على اي سيرفر طالما ان الميزات التجريبية مشغلة. كمثال اليك شرح مفصل عن طريقة تثبيته في خدمة اتيرنوس:
 </div>
 
-<iframe width="560" height="315" src="https://youtu.be/ZMp3Qpc0CfE?si=0YCQekD84yD9v8Kf" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZMp3Qpc0CfE" frameborder="0" allowfullscreen></iframe>
 
 ## Supported Languages
 
