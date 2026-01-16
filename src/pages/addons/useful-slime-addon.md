@@ -26,7 +26,7 @@ downloads:
 
 # Useful Slime Add-on
 
-Useful Slime is Add-on that adds tools to reduce fall damage, launch yourself across long distances, and discover floating islands — making survival gameplay faster, safer, and more fun.
+Useful Slime is Add-on that adds tools to reduce fall damage, launch yourself across long distances, and discover floating islands, making survival gameplay faster, safer, and more fun.
 
 <SectionSpacer 
   title="Info"
