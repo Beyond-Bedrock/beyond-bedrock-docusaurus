@@ -69,14 +69,29 @@ Using the statistics top, you can see the top 3 players in the world by each sta
 
 ![Chat Command](/img/addons/statistics-add-on/chat-command.webp)
 
-## Downloads:
-
-Download the Statistics Add-on for your Minecraft version:
-
-- **[Download for 1.21.30](https://link-target.net/1158432/statistics-add-on-12130)** (Temporarily stopped updating)
-- **[Download for 1.21.20](https://link-hub.net/1158432/statistics-add-on-12120)**
-- **[Download for 1.21](https://direct-link.net/1158432/statistics-add-on-121)**
-
 ## Showcase:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nA7YJahjuD8" frameborder="0" allowfullscreen></iframe>
+
+## Downloads:
+
+<DownloadButton
+  title="Statistics Add-on"
+  description="Download the Statistics Add-on for your Minecraft version."
+  visibleButtons={[
+    {
+      label: "1.21.20+",
+      link: "https://link-hub.net/1158432/statistics-add-on-12120",
+    },
+  ]}
+  hiddenButtons={[
+    {
+      label: "1.21.30",
+      link: "https://link-target.net/1158432/statistics-add-on-12130",
+    },
+    {
+      label: "1.21",
+      link: "https://direct-link.net/1158432/statistics-add-on-121",
+    },
+  ]}
+/>

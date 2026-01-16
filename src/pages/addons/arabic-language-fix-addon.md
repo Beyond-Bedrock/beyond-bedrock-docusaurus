@@ -69,4 +69,83 @@ downloads:
 
 ## Downloads
 
-**[Download Link (1.21.120+)](https://www.mediafire.com/file/wzmlmn3iyze9pmz/Ar_Lang_Fix_%25281.21.12x_%25D9%2583%25D9%2584_%25D8%25A7%25D9%2584%25D8%25A7%25D8%25B5%25D8%25AF%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA_%25D9%2581%25D9%2588%25D9%2582%2529.mcaddon/file)**
+<DownloadButton
+  title="Arabic Language Fix"
+  description="اختر الإصدار الذي يطابق إصدار اللعبة الخاصة بك."
+  visibleButtons={[
+    {
+      label: "1.21.12x كل الاصدارات فوق",
+      link: "https://www.mediafire.com/file/wzmlmn3iyze9pmz/Ar_Lang_Fix_%25281.21.12x_%25D9%2583%25D9%2584_%25D8%25A7%25D9%2584_%25D8%25A7%25D8%25B5%25D8%25AF%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA_%25D9%2581%259%2588%25D9%2582%2529.mcaddon/file",
+    },
+  ]}
+  hiddenButtons={[
+    {
+      label: "1.21.1xx",
+      link: "https://www.mediafire.com/file/86mnd719wywjcx4/1.21.1xx+Ar_Lang_Fix.mcaddon/file",
+    },
+    {
+      label: "1.21.9x",
+      link: "https://www.mediafire.com/file/ozav0qqt3qon211/1.21.9x_Ar_Lang_Fix.mcaddon/file",
+    },
+    {
+      label: "1.21.7x - 1.21.8x",
+      link: "https://www.mediafire.com/file/h0cs8ms14gke3bl/1.21.70%252B_Ar_Lang_Fix.mcaddon/file",
+    },
+    {
+      label: "1.21.6x",
+      link: "https://www.mediafire.com/file/jl9stlhfh7gw6qg/1.21.60%252B_Ar_Lang_Fix.mcaddon/file",
+    },
+    {
+      label: "1.21.5x",
+      link: "https://www.mediafire.com/file/nd9usp6swcdnbdt/1.21.50%252B_Ar_Lang_Fix.mcaddon/file",
+    },
+    {
+      label: "1.21.4x",
+      link: "https://www.mediafire.com/file/6brxr6p7pue7k8e/1.21.40%252B_Ar_Lang_Fix.mcaddon/file",
+    },
+    {
+      label: "1.21.3x",
+      link: "https://www.mediafire.com/file/c5wccz22jmsl9uu/1.21.30_Ar_Lang_Fix.mcaddon/file",
+    },
+    {
+      label: "1.21.2x",
+      link: "https://www.mediafire.com/file/pzzuu6e5vkw5a57/1.21.20_Ar_Lang_Fix.mcaddon/file",
+    },
+    {
+      label: "1.21",
+      link: "https://www.mediafire.com/file/vlnkfiww8buqusb/1.21_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+    {
+      label: "1.20.8x",
+      link: "https://www.mediafire.com/file/vxwg7svomql8tjo/1.20.8x_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+    {
+      label: "1.20.7x",
+      link: "https://www.mediafire.com/file/zrloa4nzm3gahrq/1.20.70_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+    {
+      label: "1.20.6x",
+      link: "https://www.mediafire.com/file/1xsh7r1to9wnepm/1.20.60_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+    {
+      label: "1.20.5x",
+      link: "https://www.mediafire.com/file/20dugdfmt219kxa/1.20.50_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+    {
+      label: "1.20.4x",
+      link: "https://www.mediafire.com/file/dqf4gzab8ujdz1p/1.20.40_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+    {
+      label: "1.20.3x",
+      link: "https://www.mediafire.com/file/0n54kmjkh9guf7r/1.20.30_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+    {
+      label: "1.20.1x",
+      link: "https://www.mediafire.com/file/51c7e6hvwrcq24f/1.20.10_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+    {
+      label: "1.20",
+      link: "https://www.mediafire.com/file/sn786rh93yhtxbb/1.20_Ar_Lang_Fix_pack_v1.4.mcaddon/file",
+    },
+  ]}
+/>

@@ -54,4 +54,14 @@ downloads:
 
 ## Downloads
 
-**[Download Link (1.21.90+)](https://loot-link.com/s?FQUj8DkW)**
+<DownloadButton
+  title="Way Point Lodestone"
+  description="Download for your Minecraft version."
+  visibleButtons={[
+    {
+      label: "1.21.90+",
+      link: "https://loot-link.com/s?FQUj8DkW",
+    },
+  ]}
+
+/>

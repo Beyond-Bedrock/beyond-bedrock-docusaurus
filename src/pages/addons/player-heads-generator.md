@@ -47,4 +47,13 @@ For any bug reports, feature suggestions, or to connect with others using the ad
 
 ## Downloads
 
-[Generate & Download](https://minato.beyondbedrock.org/web-apps/player-heads/)
+<DownloadButton
+  title="Player Heads Generator"
+  description="Generate and download custom player head packs."
+  visibleButtons={[
+    {
+      label: "1.21.90+",
+      link: "https://minato.beyondbedrock.org/web-apps/player-heads/",
+    },
+  ]}
+/>

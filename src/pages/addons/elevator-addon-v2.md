@@ -44,4 +44,13 @@ downloads:
 
 ## Downloads
 
-**[Download Link (1.21.90+)](https://loot-link.com/s?36qRrK60)**
+<DownloadButton
+  title="Elevator Add-on V2"
+  description="Download for your Minecraft version."
+  visibleButtons={[
+    {
+      label: "1.21.90+",
+      link: "https://loot-link.com/s?36qRrK60",
+    },
+  ]}
+/>

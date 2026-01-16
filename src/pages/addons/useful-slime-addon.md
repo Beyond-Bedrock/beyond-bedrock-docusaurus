@@ -111,5 +111,19 @@ You can break leaves of slime tree to get slime tree saplings and plant them any
 
 ## Downloads
 
-- **[Download for 1.21.100+](https://link-hub.net/1158432/zOLwtWJeH6rL)**
-- **[Download for 1.21.90+](https://direct-link.net/1158432/iY7ZFKa6KcFr)**
+<DownloadButton
+  title="Useful Slime Add-on"
+  description="Download for your Minecraft version."
+  visibleButtons={[
+    {
+      label: "1.21.100+",
+      link: "https://link-hub.net/1158432/zOLwtWJeH6rL",
+    },
+  ]}
+  hiddenButtons={[
+    {
+      label: "1.21.90",
+      link: "https://direct-link.net/1158432/iY7ZFKa6KcFr",
+    },
+  ]}
+/>

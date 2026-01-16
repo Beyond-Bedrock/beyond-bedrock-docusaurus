@@ -44,4 +44,13 @@ https://discord.gg/eVdxXMU3R7
 
 ## Downloads
 
-**[Download Link (1.21.90+)](https://lootdest.org/s?KyRbok62)**
+<DownloadButton
+  title="Mobs Jar Add-on"
+  description="Download for your Minecraft version."
+  visibleButtons={[
+    {
+      label: "1.21.90+",
+      link: "https://lootdest.org/s?KyRbok62",
+    },
+  ]}
+/>

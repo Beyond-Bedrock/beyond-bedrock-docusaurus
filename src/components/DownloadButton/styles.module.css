@@ -1,0 +1,74 @@
+.downloadContainer {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.light {
+  background: #f9f9f9;
+  color: #222;
+}
+
+.dark {
+  background: #222;
+  color: #f9f9f9;
+}
+
+.title {
+  margin: 0 0 0.5em;
+  font-size: 1.4em;
+}
+
+.description {
+  margin: 0 0 1em;
+  font-size: 1em;
+  opacity: 0.85;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 0.6em 1em;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.toggleBtn {
+  margin-top: 1em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95em;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.hiddenSection {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.hiddenButton {
+  padding: 0.5em 0.8em;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 0.95em;
+}

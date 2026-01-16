@@ -140,4 +140,14 @@ Server operators and designated admins have access to a powerful control panel t
 
 ## Downloads
 
-**[Teams Addon (ALL VERSIONS)](https://flaxon-studio.mcpe.site/download/TEAMS1_21_8x.mcaddon)**
+<DownloadButton
+  title="Teams Add-on Beta"
+  description="Download for all supported versions."
+  visibleButtons={[
+    {
+      label: "All Versions (1.21.60+)",
+      link: "https://flaxon-studio.mcpe.site/download/TEAMS1_21_8x.mcaddon",
+    },
+  ]}
+
+/>
