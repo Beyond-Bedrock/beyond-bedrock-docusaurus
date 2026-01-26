@@ -96,6 +96,7 @@ Server operators and designated admins have access to a powerful control panel t
   color="#ff5733"
   textColor="#ff5733"
 />
+<div align="right">
 
 مود التيمات: نظام الفصائل والكلانات المتكامل لماينكرافت
 
@@ -141,6 +142,8 @@ Server operators and designated admins have access to a powerful control panel t
 يتلقى اللاعبون تنبيهات داخل اللعبة للأحداث المهمة، مثل دعوات الانضمام، أو الطرد من فريق، أو رسائل النظام الأخرى. يمكنهم إدارة هذه التنبيهات عبر قائمة شخصية.
 
 ### لوحة تحكم قوية للأدمن
+
+<div dir="rtl">
 يمتلك مديرو السيرفر والأدمنز المعينون صلاحية الوصول إلى لوحة تحكم قوية لإدارة المود بالكامل، مما يسمح لهم بـ:
 - حذف جميع التيمات بشكل كامل
 - منح أو سحب صلاحيات الأدمن من لاعبين آخرين
@@ -149,6 +152,8 @@ Server operators and designated admins have access to a powerful control panel t
 - البحث عن أي فريق وإدارته مباشرة (حذفه، إضافة نقاط له، الانتقال إلى علمه)
 - عرض قائمة شاملة بجميع اللاعبين والفرق التي ينتمون إليها
 - إعادة جميع الفرق إلى المستوى الأول ومسح تقدمهم
+</div>
+</div>
 
 ## Downloads
 
