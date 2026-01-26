@@ -28,7 +28,13 @@ downloads:
 
 # Teams Add-on Beta
 
-=== English Description ===
+<SectionSpacer 
+  title="English Description"
+  type="double"
+  align="center"
+  color="#ff5733"
+  textColor="#ff5733"
+/>
 
 Teams Add-on: The Ultimate Faction & Clan System for Minecraft
 
@@ -83,7 +89,13 @@ Server operators and designated admins have access to a powerful control panel t
 - View a comprehensive list of all players and their associated teams
 - Reset all teams back to Level 1, clearing their progress
 
-=== الوصف باللغة العربية ===
+<SectionSpacer 
+  title="الوصف باللغة العربية"
+  type="double"
+  align="center"
+  color="#ff5733"
+  textColor="#ff5733"
+/>
 
 مود التيمات: نظام الفصائل والكلانات المتكامل لماينكرافت
 

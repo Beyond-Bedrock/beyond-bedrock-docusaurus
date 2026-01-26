@@ -21,7 +21,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Arabic Language Fix Add-on\r\n\r\n<div align=\"right\">\r\nمود بسيط يقوم بإصلاح مشكل عدم دعم ماينكرافت بيدروك للغة العربية.<br />\r\nلا شك أنك عانيت من صعوبة التواصل باللغة العربية في المحادثات داخل اللعبة،...",
+    "content": "\r\n# Arabic Language Fix Add-on\r\n\r\n<div align=\"right\" dir=\"rtl\">\r\nمود بسيط يقوم بإصلاح مشكل عدم دعم ماينكرافت بيدروك للغة العربية.<br />\r\nلا شك أنك عانيت من صعوبة التواصل باللغة العربية في المحادثات دا...",
     "image": "img/addons/arabic-language-fix-addon/thumbnail.webp"
   },
   {
@@ -152,7 +152,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Teams Add-on Beta\r\n\r\n=== English Description ===\r\n\r\nTeams Add-on: The Ultimate Faction & Clan System for Minecraft\r\n\r\nThis add-on, created by FlaxonStudio, introduces a comprehensive and feature-r...",
+    "content": "\r\n# Teams Add-on Beta\r\n\r\n=== English Description ===\r\n<SectionSpacer \r\n  title=\"Features\"\r\n  type=\"double\"\r\n  align=\"center\"\r\n  color=\"#ff5733\"\r\n  textColor=\"#ff5733\"\r\n/>\r\n\r\nTeams Add-on: The Ultimate...",
     "image": "img/addons/teams-addon-beta/thumbnail.webp"
   },
   {
@@ -179,7 +179,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Useful Slime Add-on\r\n\r\nUseful Slime is Add-on that adds tools to reduce fall damage, launch yourself across long distances, and discover floating islands, making survival gameplay faster, safer, ...",
+    "content": "\r\n# Useful Slime Add-on\r\n\r\nUseful Slime is Add-on that adds tools to reduce fall damage, launch yourself across long distances, and discover floating islands, making survival gameplay faster, safer, a...",
     "image": "img/addons/useful-slime-addon/thumbnail.webp"
   },
   {
