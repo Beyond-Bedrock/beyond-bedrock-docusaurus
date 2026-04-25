@@ -152,7 +152,7 @@
     },
     "rating": 0,
     "lastUpdated": "2025-06-30T00:26:38.484644",
-    "content": "\r\n# Teams Add-on Beta\r\n\r\n=== English Description ===\r\n<SectionSpacer \r\n  title=\"Features\"\r\n  type=\"double\"\r\n  align=\"center\"\r\n  color=\"#ff5733\"\r\n  textColor=\"#ff5733\"\r\n/>\r\n\r\nTeams Add-on: The Ultimate...",
+    "content": "\r\n# Teams Add-on Beta\r\n\r\n<SectionSpacer \r\n  title=\"English Description\"\r\n  type=\"double\"\r\n  align=\"center\"\r\n  color=\"#ff5733\"\r\n  textColor=\"#ff5733\"\r\n/>\r\n\r\nTeams Add-on: The Ultimate Faction & Clan Sy...",
     "image": "img/addons/teams-addon-beta/thumbnail.webp"
   },
   {
