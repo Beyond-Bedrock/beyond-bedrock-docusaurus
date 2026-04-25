@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - 'docs/none.md'
       - '.github/workflows/new-content.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
