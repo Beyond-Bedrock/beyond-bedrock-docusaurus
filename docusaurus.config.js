@@ -136,15 +136,5 @@ export default {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      headTags: [
-        {
-          tagName: 'script',
-          attributes: {
-            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7542591684540065',
-            async: true,
-            crossorigin: 'anonymous',
-          },
-        },
-      ],
     }),
 };
