@@ -1,5 +1,30 @@
 [
   {
+    "id": "better-hooks-add-on",
+    "slug": "better-hooks-add-on",
+    "title": "Better Hooks Add-on",
+    "description": "Grapple, swing, and teleport with 6 tiers of modular grappling hooks. Fully multiplayer compatible and requires no Beta APIs!",
+    "author": {
+      "name": "ilyasseah1",
+      "avatar": "img/authors/ilyasseah1.webp"
+    },
+    "images": [],
+    "tags": [
+      "utility",
+      "tools",
+      "traversal",
+      "gameplay"
+    ],
+    "category": "",
+    "downloads": {
+      "1.21.70+": "https://www.mediafire.com/file/yi20sksqyslddjn/hook_addon.mcaddon/file"
+    },
+    "rating": 0,
+    "lastUpdated": "2026-06-14T21:23:16",
+    "content": "\n# Better Hooks Add-on\n\n![Better Hooks Thumbnail](/img/addons/Better-hooks-add-on/thumbnail.png)\n\nTired of slow walking, climbing ladders, or using basic ender pearls to get around? **Better Hooks** i...",
+    "image": "img/addons/Better-hooks-add-on/thumbnail.png"
+  },
+  {
     "id": "arabic-language-fix-addon",
     "slug": "arabic-language-fix-addon",
     "title": "Arabic Language Fix Add-on",
