@@ -27,7 +27,7 @@ downloads:
 
 Tired of slow walking, climbing ladders, or using basic ender pearls to get around? **Better Hooks** is a comprehensive traversal add-on that introduces **6 progressive tiers of grappling hooks** to Minecraft Bedrock Edition!
 
-From simple wood hooks to god-tier ender hooks that teleport entities and shoot fireballs, this add-on expands how you travel, explore, and fight.
+From simple wood hooks to overpowered ender hooks that teleport entities and shoot fireballs, this add-on expands how you travel, explore, and fight.
 
 <SectionSpacer 
   title="Key Features"
