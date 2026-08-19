@@ -7,9 +7,11 @@ export default function ViewCounter() {
   const [count, setCount] = useState(null);
 
   useEffect(() => {
-    incrementPageView(pathname)
-      .then(setCount)
-      .catch(() => {});
+    if (pathname) {
+      incrementPageView(pathname)
+        .then(setCount)
+        .catch(() => {});
+    }
   }, [pathname]);
 
   return <span>👁 {count ?? '…'} views</span>;

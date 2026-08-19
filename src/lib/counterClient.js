@@ -7,7 +7,11 @@ async function callCounter(fn, args, keepalive = false) {
     body: JSON.stringify({ fn, args }),
     keepalive,
   });
-  if (!res.ok) throw new Error(`counter request failed: ${res.status}`);
+  if (!res.ok) {
+    const errorText = await res.text();
+    console.error('Counter request failed:', res.status, errorText);
+    throw new Error(`counter request failed: ${res.status} - ${errorText}`);
+  }
   return res.json();
 }
 
