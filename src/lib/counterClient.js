@@ -1,6 +1,6 @@
 const proxyUrl = 'https://docs-counter-proxy.weathered-dew-2d87.workers.dev';
 const supabaseUrl = 'https://tedcnrtzdznipuljtvke.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRlZGNucnR6ZHpuaXB1bGp0dmtlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NzEyOTQ1MCwiZXhwIjoyMTAyNzA1NDUwfQ.UIoq7WPSyWRNwPpmFH1dfMtx4L1jbItGyeuEbxU9TSE';
+const supabaseAnonKey = 'sb_publishable_T5VoG4fAkJmNCqS--9zOPg_R_tYvP_t';
 
 async function callCounter(fn, args, keepalive = false) {
   const res = await fetch(proxyUrl, {
@@ -25,12 +25,12 @@ export function incrementDownload(file) {
   return callCounter('increment_download', { file }, true);
 }
 
-// Get count without incrementing - direct Supabase query
+// Get count without incrementing - direct Supabase query with anon key
 export function getPageViewCount(pageSlug) {
   return fetch(`${supabaseUrl}/rest/v1/page_views?slug=eq.${encodeURIComponent(pageSlug)}&select=count`, {
     headers: {
-      'apikey': supabaseKey,
-      'Authorization': `Bearer ${supabaseKey}`,
+      'apikey': supabaseAnonKey,
+      'Authorization': `Bearer ${supabaseAnonKey}`,
     },
   })
   .then(res => res.json())
@@ -46,8 +46,8 @@ export function getPageViewCount(pageSlug) {
 export function getDownloadCount(file) {
   return fetch(`${supabaseUrl}/rest/v1/file_downloads?file_id=eq.${encodeURIComponent(file)}&select=count`, {
     headers: {
-      'apikey': supabaseKey,
-      'Authorization': `Bearer ${supabaseKey}`,
+      'apikey': supabaseAnonKey,
+      'Authorization': `Bearer ${supabaseAnonKey}`,
     },
   })
   .then(res => res.json())
