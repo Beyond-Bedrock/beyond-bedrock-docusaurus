@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from '@docusaurus/router';
-import { incrementPageView } from '../lib/counterClient';
+import { incrementPageView, getPageViewCount } from '../lib/counterClient';
 
 export default function ViewCounter({ slug, showLabel = true, incrementOnMount = true }) {
   const { pathname } = useLocation();
@@ -9,13 +9,23 @@ export default function ViewCounter({ slug, showLabel = true, incrementOnMount =
   const displaySlug = slug || pathname;
 
   useEffect(() => {
-    if (displaySlug && incrementOnMount) {
-      incrementPageView(displaySlug)
-        .then((data) => {
-          if (typeof data === 'number') setCount(data);
-          else setError(true);
-        })
-        .catch(() => setError(true));
+    if (displaySlug) {
+      if (incrementOnMount) {
+        incrementPageView(displaySlug)
+          .then((data) => {
+            if (typeof data === 'number') setCount(data);
+            else setError(true);
+          })
+          .catch(() => setError(true));
+      } else {
+        // Just get the count without incrementing
+        getPageViewCount(displaySlug)
+          .then((data) => {
+            if (typeof data === 'number') setCount(data);
+            else setCount(null); // We don't have a get function, so show placeholder
+          })
+          .catch(() => setCount(null));
+      }
     }
   }, [displaySlug, incrementOnMount]);
 

@@ -51,7 +51,7 @@ export default function ContentCard({ item, contentType }) {
         )}
 
         <div className={styles.metaRow}>
-          <ViewCounter slug={`/${contentType}/${item.slug}`} showLabel={false} incrementOnMount={true} />
+          <ViewCounter slug={`/${contentType}/${item.slug}`} showLabel={false} incrementOnMount={false} />
         </div>
 
         {!!item.tags?.length && (

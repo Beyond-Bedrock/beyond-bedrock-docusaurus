@@ -10,9 +10,9 @@ export default function DownloadCounter({ file, showLabel = true }) {
       getDownloadCount(file)
         .then((data) => {
           if (typeof data === 'number') setCount(data);
-          else setError(true);
+          else setCount(null); // We don't have a get function, so show placeholder
         })
-        .catch(() => setError(true));
+        .catch(() => setCount(null));
     }
   }, [file]);
 
