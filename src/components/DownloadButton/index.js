@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 import { useColorMode } from "@docusaurus/theme-common";
+import { incrementDownload } from "@site/src/lib/counterClient";
 
 import styles from "./styles.module.css";
 
@@ -15,6 +16,14 @@ export default function DownloadButton({
 
   // flip icon/text when toggled
   const toggleHidden = () => setShowHidden((prev) => !prev);
+
+  const handleDownload = (e, link, label) => {
+    // Track download via Cloudflare Worker
+    const fileName = label.toLowerCase().replace(/\s+/g, '-');
+    incrementDownload(fileName).catch(error => console.error('Download tracking error:', error));
+    
+    // Continue with normal link behavior
+  };
 
   return (
     <div
@@ -32,6 +41,7 @@ export default function DownloadButton({
           <a
             key={idx}
             href={link}
+            onClick={(e) => handleDownload(e, link, label)}
             className={styles.button}
             style={{ backgroundColor: color }}
           >
@@ -57,6 +67,7 @@ export default function DownloadButton({
                 <a
                   key={idx}
                   href={link}
+                  onClick={(e) => handleDownload(e, link, label)}
                   className={styles.hiddenButton}
                   style={{ borderColor: color }}
                 >

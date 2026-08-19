@@ -4,6 +4,7 @@ import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 import clsx from 'clsx';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import ViewCounter from './ViewCounter';
 
 import styles from './ContentDetail.module.css';
 import StructuredData from './StructuredData';
@@ -111,7 +112,10 @@ export default function ContentDetail({ item, contentType: contentTypeModule }) 
           </div>
           
           <div className={styles.info}>
-            <Heading as="h1" className={styles.title}>{item.title}</Heading>
+            <div className={styles.titleRow}>
+              <Heading as="h1" className={styles.title}>{item.title}</Heading>
+              <ViewCounter slug={`/${contentType}/${item.slug}`} showLabel={true} />
+            </div>
             
             {item.description && (
               <p className={styles.description}>{item.description}</p>

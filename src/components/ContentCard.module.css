@@ -102,6 +102,15 @@
   font-size: 0.9rem;
 }
 
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-100);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

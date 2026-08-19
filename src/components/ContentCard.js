@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import clsx from 'clsx';
+import ViewCounter from './ViewCounter';
 
 import styles from './ContentCard.module.css';
 
@@ -48,6 +49,10 @@ export default function ContentCard({ item, contentType }) {
             <span className={styles.authorName}>{item.author.name}</span>
           </div>
         )}
+
+        <div className={styles.metaRow}>
+          <ViewCounter slug={`/${contentType}/${item.slug}`} showLabel={false} />
+        </div>
 
         {!!item.tags?.length && (
           <div className={styles.tags}>
