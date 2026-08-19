@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 import { useColorMode } from "@docusaurus/theme-common";
-import { incrementDownload } from "@site/src/lib/counterClient";
 
 import styles from "./styles.module.css";
 
@@ -33,11 +32,6 @@ export default function DownloadButton({
           <a
             key={idx}
             href={link}
-            onClick={(e) => {
-              e.preventDefault();
-              incrementDownload(label.toLowerCase().replace(/\s+/g, '-')).catch(() => {});
-              window.open(link, '_blank');
-            }}
             className={styles.button}
             style={{ backgroundColor: color }}
           >
@@ -63,11 +57,6 @@ export default function DownloadButton({
                 <a
                   key={idx}
                   href={link}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    incrementDownload(label.toLowerCase().replace(/\s+/g, '-')).catch(() => {});
-                    window.open(link, '_blank');
-                  }}
                   className={styles.hiddenButton}
                   style={{ borderColor: color }}
                 >
