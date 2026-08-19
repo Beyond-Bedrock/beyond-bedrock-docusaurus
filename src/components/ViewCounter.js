@@ -10,7 +10,10 @@ export default function ViewCounter() {
   useEffect(() => {
     if (pathname) {
       incrementPageView(pathname)
-        .then(setCount)
+        .then((data) => {
+          if (typeof data === 'number') setCount(data);
+          else setError(true);
+        })
         .catch(() => setError(true));
     }
   }, [pathname]);
