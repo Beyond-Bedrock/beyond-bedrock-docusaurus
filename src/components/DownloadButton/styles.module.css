@@ -39,6 +39,7 @@
   border-radius: 5px;
   font-weight: 600;
   transition: opacity 0.2s;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -71,4 +72,10 @@
   border: 2px solid;
   border-radius: 5px;
   font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hiddenButton:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
