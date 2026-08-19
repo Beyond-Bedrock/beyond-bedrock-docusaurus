@@ -112,14 +112,15 @@ export default function ContentDetail({ item, contentType: contentTypeModule }) 
           </div>
           
           <div className={styles.info}>
-            <div className={styles.titleRow}>
-              <Heading as="h1" className={styles.title}>{item.title}</Heading>
-              <ViewCounter slug={`/${contentType}/${item.slug}`} showLabel={true} />
-            </div>
+            <Heading as="h1" className={styles.title}>{item.title}</Heading>
             
             {item.description && (
               <p className={styles.description}>{item.description}</p>
             )}
+
+            <div className={styles.pageViewCounter}>
+              <ViewCounter slug={`/${contentType}/${item.slug}`} showLabel={true} incrementOnMount={true} />
+            </div>
 
             {item.author?.name && (
               <div className={styles.author}>

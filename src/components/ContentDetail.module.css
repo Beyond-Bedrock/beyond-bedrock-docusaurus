@@ -28,13 +28,6 @@
   gap: 1rem;
 }
 
-.titleRow {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 .title {
   margin: 0;
   font-size: 2.5rem;
@@ -91,6 +84,15 @@
 .downloadBtn {
   align-self: flex-start;
   margin-top: 0.5rem;
+}
+
+.pageViewCounter {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  display: inline-block;
 }
 
 .content {

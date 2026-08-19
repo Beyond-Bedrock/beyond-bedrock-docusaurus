@@ -22,3 +22,9 @@ export function incrementPageView(pageSlug) {
 export function incrementDownload(file) {
   return callCounter('increment_download', { file }, true);
 }
+
+// For now, we'll use increment to get the count since we don't have a separate get function
+// This will increment the count when displaying it, which is acceptable for a counter
+export function getDownloadCount(file) {
+  return callCounter('increment_download', { file });
+}

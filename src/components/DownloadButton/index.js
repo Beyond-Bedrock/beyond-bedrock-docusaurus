@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import clsx from "clsx";
 import { useColorMode } from "@docusaurus/theme-common";
 import { incrementDownload } from "@site/src/lib/counterClient";
+import DownloadCounter from "../DownloadCounter";
 
 import styles from "./styles.module.css";
 
@@ -38,15 +39,17 @@ export default function DownloadButton({
       {/* Visible Buttons */}
       <div className={styles.buttonRow}>
         {visibleButtons.map(({ label, link = "#", color = "#4CAF50" }, idx) => (
-          <a
-            key={idx}
-            href={link}
-            onClick={(e) => handleDownload(e, link, label)}
-            className={styles.button}
-            style={{ backgroundColor: color }}
-          >
-            {label}
-          </a>
+          <div key={idx} className={styles.buttonWrapper}>
+            <a
+              href={link}
+              onClick={(e) => handleDownload(e, link, label)}
+              className={styles.button}
+              style={{ backgroundColor: color }}
+            >
+              {label}
+            </a>
+            <DownloadCounter file={label.toLowerCase().replace(/\s+/g, '-')} showLabel={false} />
+          </div>
         ))}
       </div>
 
@@ -64,15 +67,17 @@ export default function DownloadButton({
           {showHidden && (
             <div className={styles.hiddenSection}>
               {hiddenButtons.map(({ label, link, color = "#2196F3" }, idx) => (
-                <a
-                  key={idx}
-                  href={link}
-                  onClick={(e) => handleDownload(e, link, label)}
-                  className={styles.hiddenButton}
-                  style={{ borderColor: color }}
-                >
-                  {label}
-                </a>
+                <div key={idx} className={styles.buttonWrapper}>
+                  <a
+                    href={link}
+                    onClick={(e) => handleDownload(e, link, label)}
+                    className={styles.hiddenButton}
+                    style={{ borderColor: color }}
+                  >
+                    {label}
+                  </a>
+                  <DownloadCounter file={label.toLowerCase().replace(/\s+/g, '-')} showLabel={false} />
+                </div>
               ))}
             </div>
           )}
