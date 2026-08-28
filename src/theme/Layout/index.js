@@ -2,8 +2,23 @@ import React from 'react';
 import Layout from '@theme-original/Layout';
 import Head from '@docusaurus/Head';
 import ViewCounter from '@site/src/components/ViewCounter';
+import { useLocation } from '@docusaurus/router';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function LayoutWrapper(props) {
+  const { pathname } = useLocation();
+  const { siteConfig } = useDocusaurusContext();
+  const baseUrl = siteConfig?.baseUrl || '/';
+
+  // Strip baseUrl if present, then normalize multiple and trailing slashes
+  const pathWithoutBase = pathname.startsWith(baseUrl)
+    ? '/' + pathname.slice(baseUrl.length)
+    : pathname;
+  const normalizedPath = pathWithoutBase.replace(/\/+/g, '/').replace(/\/+$/, '');
+
+  // Only show view counter on content pages under /guides/..., /maps/..., /resource-packs/..., /addons/...
+  const isContentPage = /^\/(guides|maps|resource-packs|addons)\/.+/i.test(normalizedPath);
+
   return (
     <>
       <Head>
@@ -15,10 +30,13 @@ export default function LayoutWrapper(props) {
       </Head>
       <Layout {...props}>
         {props.children}
-        <div style={{ marginTop: '1rem', fontSize: '0.9rem', color: 'var(--ifm-color-secondary)', textAlign: 'center', paddingBottom: '2rem' }}>
-          <ViewCounter incrementOnMount={true} showLabel={true} />
-        </div>
+        {isContentPage && (
+          <div style={{ marginTop: '1rem', fontSize: '0.9rem', color: 'var(--ifm-color-secondary)', textAlign: 'center', paddingBottom: '2rem' }}>
+            <ViewCounter incrementOnMount={true} showLabel={true} />
+          </div>
+        )}
       </Layout>
     </>
   );
 }
+

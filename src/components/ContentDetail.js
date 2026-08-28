@@ -115,7 +115,7 @@ export default function ContentDetail({ item, contentType: contentTypeModule }) 
             <Heading as="h1" className={styles.title}>{item.title}</Heading>
             
             <div className={styles.pageViewCounter}>
-              <ViewCounter slug={`/${contentType}/${item.slug}`} showLabel={true} incrementOnMount={true} />
+              <ViewCounter slug={`/${contentType}/${item.slug}`} showLabel={true} incrementOnMount={false} />
             </div>
             
             {item.description && (
