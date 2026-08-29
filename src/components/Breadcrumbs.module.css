@@ -1,5 +1,5 @@
 .breadcrumbs {
-  margin-bottom: 1rem;
+  padding: 1.25rem 0 0.5rem;
 }
 
 .breadcrumbList {
@@ -14,30 +14,31 @@
 .breadcrumbItem {
   display: flex;
   align-items: center;
-  font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-600);
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
 }
 
 .breadcrumbItem:not(:last-child)::after {
   content: "/";
   margin: 0 0.5rem;
-  color: var(--ifm-color-emphasis-400);
+  color: var(--ifm-color-emphasis-300);
+  font-weight: 300;
 }
 
 .breadcrumbLink {
-  color: var(--ifm-color-primary);
+  color: var(--ifm-color-content-secondary);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.15s ease;
 }
 
 .breadcrumbLink:hover {
-  color: var(--ifm-color-primary-dark);
-  text-decoration: underline;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
 }
 
 .breadcrumbActive {
-  color: var(--ifm-color-emphasis-800);
-  font-weight: 500;
+  color: var(--ifm-heading-color);
+  font-weight: 550;
 }
 
 .breadcrumbCurrent {

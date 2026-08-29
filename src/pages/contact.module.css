@@ -1,78 +1,113 @@
 .contactMethods {
-  padding: 4rem 0;
-  background: var(--ifm-background-color);
+  padding: 2.75rem 0 3rem;
+  background-color: var(--ifm-background-color);
 }
 
 .contactCards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .contactCard {
-  background: var(--ifm-card-background-color);
+  background-color: var(--ifm-card-background-color);
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: var(--ifm-card-border-radius);
-  padding: 2rem;
+  padding: 1.75rem 1.25rem 1.5rem;
   text-align: center;
-  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.25s ease;
 }
 
 .contactCard:hover {
-  box-shadow: var(--ifm-card-shadow);
-  transform: translateY(-4px);
+  transform: translateY(-3px);
+  box-shadow: var(--ifm-global-shadow-md);
+  border-color: var(--bb-brand);
+}
+
+/* Preserved Intentional Social Card Gradients on Hover */
+.contactCard:nth-of-type(1):hover {
+  background: var(--discord-background);
+}
+
+.contactCard:nth-of-type(2):hover {
+  background: var(--email-background);
+}
+
+.contactCard:nth-of-type(3):hover {
+  background: var(--x-background);
+}
+
+.contactCard:nth-of-type(4):hover {
+  background: var(--github-background);
+}
+
+.contactCard:nth-of-type(5):hover {
+  background: var(--youtube-background);
 }
 
 .contactIcon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 50%;
+  border: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .contactIcon img {
-  width: 70px;
-  height: 70px;
+  width: 34px;
+  height: 34px;
   filter: var(--ifm-image-filter);
 }
 
-.contactCard:nth-of-type(1):hover {background: var(--discord-background);}
-.contactCard:nth-of-type(2):hover {background: var(--email-background);}
-.contactCard:nth-of-type(3):hover {background: var(--x-background);}
-.contactCard:nth-of-type(4):hover {background: var(--github-background);}
-.contactCard:nth-of-type(5):hover {background: var(--youtube-background);}
-
 .contactCard h3 {
-  margin: 1rem 0 0.5rem;
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: var(--ifm-heading-color);
+  letter-spacing: -0.01em;
 }
 
 .contactCard p {
   margin: 0 0 1rem;
+  font-size: 0.9rem;
   color: var(--ifm-color-content-secondary);
+  line-height: 1.45;
 }
 
 .contactEmail {
   font-family: var(--ifm-font-family-monospace);
-  font-size: 1.1em;
-  background: var(--ifm-color-emphasis200);
-  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-content);
+  padding: 0.35rem 0.75rem;
   border-radius: 4px;
-  margin: 1rem 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  margin: 0 0 1rem;
   display: inline-block;
+}
+
+.contactCard :global(.button) {
+  margin-top: auto;
+  width: 100%;
+  max-width: 200px;
 }
 
 /* Responsive */
 @media screen and (max-width: 996px) {
   .contactMethods {
-    padding: 2rem 0;
+    padding: 2rem 0 2.5rem;
   }
-  
+
   .contactCards {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 }

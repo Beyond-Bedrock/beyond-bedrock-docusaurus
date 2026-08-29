@@ -14,7 +14,7 @@
   width: 350px;
   height: auto;
   opacity: 0.3;
-  animation: 
+  animation:
     floatRandom 40s infinite ease-in-out,
     rotateRandom 30s infinite linear,
     scaleRandom 16s infinite ease-in-out,
@@ -26,15 +26,19 @@
   0% {
     transform: translate(10vw, 10vh);
   }
+
   25% {
     transform: translate(80vw, 20vh);
   }
+
   50% {
     transform: translate(70vw, 80vh);
   }
+
   75% {
     transform: translate(20vw, 70vh);
   }
+
   100% {
     transform: translate(10vw, 10vh);
   }
@@ -44,21 +48,27 @@
   0% {
     rotate: 0deg;
   }
+
   100% {
     rotate: 360deg;
   }
 }
 
 @keyframes scaleRandom {
-  0%, 100% {
+
+  0%,
+  100% {
     scale: 1;
   }
+
   25% {
     scale: 1.2;
   }
+
   50% {
     scale: 0.8;
   }
+
   75% {
     scale: 1.1;
   }
@@ -81,7 +91,7 @@
   height: 250px;
   top: 20%;
   left: 10%;
-  animation: 
+  animation:
     floatRandom2 50s infinite ease-in-out reverse,
     rotateRandom 40s infinite linear reverse,
     warpEffect 2.5s infinite ease-in-out;
@@ -92,7 +102,7 @@
   height: 220px;
   top: 60%;
   right: 15%;
-  animation: 
+  animation:
     floatRandom3 36s infinite ease-in-out,
     rotateRandom 24s infinite linear,
     warpEffect 4s infinite ease-in-out;
@@ -102,12 +112,15 @@
   0% {
     transform: translate(0, 0);
   }
+
   33% {
     transform: translate(60vw, 30vh);
   }
+
   66% {
     transform: translate(30vw, 60vh);
   }
+
   100% {
     transform: translate(0, 0);
   }
@@ -117,24 +130,31 @@
   0% {
     transform: translate(0, 0);
   }
+
   50% {
     transform: translate(-50vw, -40vh);
   }
+
   100% {
     transform: translate(0, 0);
   }
 }
 
 @keyframes warpEffect {
-  0%, 100% {
+
+  0%,
+  100% {
     filter: var(--ifm-image-filter) blur(0px) saturate(1);
   }
+
   25% {
     filter: var(--ifm-image-filter) blur(1px) saturate(1.2);
   }
+
   50% {
     filter: var(--ifm-image-filter) blur(2px) saturate(0.8) hue-rotate(10deg);
   }
+
   75% {
     filter: var(--ifm-image-filter) blur(1px) saturate(1.1) hue-rotate(-5deg);
   }
@@ -160,10 +180,13 @@
 }
 
 @keyframes twinkle {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.3;
     transform: scale(1);
   }
+
   50% {
     opacity: 1;
     transform: scale(1.5);

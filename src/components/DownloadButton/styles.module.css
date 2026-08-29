@@ -1,86 +1,116 @@
 .downloadContainer {
-  margin: 1em 0;
-  padding: 1em;
-  border-radius: 8px;
-  transition: background 0.3s ease;
+  margin: 1.75rem 0;
+  padding: 1.5rem;
+  border-radius: var(--ifm-card-border-radius);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-emphasis-100);
+  transition: border-color 0.2s ease;
 }
 
 .light {
-  background: #f9f9f9;
-  color: #222;
+  color: var(--ifm-font-color-base);
 }
 
 .dark {
-  background: #222;
-  color: #f9f9f9;
+  color: var(--ifm-font-color-base);
 }
 
 .title {
-  margin: 0 0 0.5em;
-  font-size: 1.4em;
+  margin: 0 0 0.4rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
+  letter-spacing: -0.01em;
 }
 
 .description {
-  margin: 0 0 1em;
-  font-size: 1em;
-  opacity: 0.85;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.5;
 }
 
 .buttonRow {
   display: flex;
-  gap: 0.5em;
+  gap: 0.75rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .buttonWrapper {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.5rem;
 }
 
 .button {
-  padding: 0.6em 1em;
+  padding: 0.6rem 1.15rem;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   font-weight: 600;
-  transition: opacity 0.2s;
+  font-size: 0.925rem;
+  transition: filter 0.15s ease, transform 0.12s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {
-  opacity: 0.8;
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .toggleBtn {
-  margin-top: 1em;
+  margin-top: 1rem;
   background: transparent;
   border: none;
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.95em;
-  color: inherit;
+  font-size: 0.875rem;
+  color: var(--ifm-color-primary);
+  padding: 0.25rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.toggleBtn:hover {
   text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 .hiddenSection {
-  margin-top: 0.5em;
+  margin-top: 0.85rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.6rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
 }
 
 .hiddenSection .buttonWrapper {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.5rem;
 }
 
 .hiddenButton {
-  padding: 0.5em 0.8em;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  color: inherit;
-  border: 2px solid;
+  color: var(--ifm-color-content);
+  background-color: var(--ifm-background-surface-color);
+  border: 1.5px solid var(--ifm-color-emphasis-300);
   border-radius: 5px;
-  font-size: 0.95em;
+  font-size: 0.9rem;
+  font-weight: 550;
+  transition: border-color 0.15s ease, transform 0.12s ease;
+}
+
+.hiddenButton:hover {
+  border-color: var(--bb-brand);
+  color: var(--ifm-heading-color);
+  transform: translateY(-1px);
+  text-decoration: none;
 }
