@@ -31,7 +31,7 @@ export default function LayoutWrapper(props) {
       <Layout {...props}>
         {props.children}
         {isContentPage && (
-          <div style={{ marginTop: '1rem', fontSize: '0.9rem', color: 'var(--ifm-color-secondary)', textAlign: 'center', paddingBottom: '2rem' }}>
+          <div style={{ marginTop: '1rem', fontSize: '0.9rem', color: 'var(--ifm-color-content-secondary)', textAlign: 'center', paddingBottom: '2rem' }}>
             <ViewCounter incrementOnMount={true} showLabel={true} />
           </div>
         )}
