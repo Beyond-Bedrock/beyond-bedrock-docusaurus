@@ -110,7 +110,6 @@ export default {
         ]
       },
       footer: {
-        style: 'dark',
         links: [
           {
             items: [{ label: 'Home', to: '/' }],

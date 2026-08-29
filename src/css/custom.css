@@ -154,10 +154,6 @@
   --hero-background: url('/img/hero-bg-dark.svg');
 }
 
-/* ==========================================================================
-   Base Elements & Global Layout
-   ========================================================================== */
-
 html {
   scroll-behavior: smooth;
 }
@@ -206,10 +202,6 @@ code {
   border-radius: var(--ifm-code-border-radius);
   vertical-align: middle;
 }
-
-/* ==========================================================================
-   Navigation Bar
-   ========================================================================== */
 
 .navbar {
   border-bottom: 1px solid var(--ifm-toc-border-color);
@@ -272,10 +264,6 @@ code {
   background-color: var(--ifm-background-surface-color);
   outline: none;
 }
-
-/* ==========================================================================
-   Buttons & Interactive Elements
-   ========================================================================== */
 
 .button {
   font-weight: 600;
@@ -341,10 +329,6 @@ code {
   font-size: 1rem;
 }
 
-/* ==========================================================================
-   Badges & Tags
-   ========================================================================== */
-
 .badge {
   font-size: 0.8rem;
   font-weight: 550;
@@ -360,28 +344,36 @@ code {
   color: var(--ifm-color-emphasis-700);
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
 .footer,
 .footer--dark {
   border-top: 1px solid var(--ifm-toc-border-color);
   padding: 1.75rem 1.25rem 1.25rem;
   background-color: var(--ifm-footer-background-color) !important;
-  color: var(--ifm-footer-color);
+  color: var(--ifm-footer-color) !important;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 [data-theme='light'] .footer,
 [data-theme='light'] .footer--dark {
+  --ifm-footer-background-color: #ffffff;
+  --ifm-footer-color: #64748b;
+  --ifm-footer-link-color: #475569;
+  --ifm-footer-link-hover-color: #0087ba;
+  --ifm-footer-title-color: #0f172a;
   background-color: #ffffff !important;
+  color: #64748b !important;
   border-top-color: #e2e8f0;
 }
 
 [data-theme='dark'] .footer,
 [data-theme='dark'] .footer--dark {
+  --ifm-footer-background-color: #0c1017;
+  --ifm-footer-color: #8b949e;
+  --ifm-footer-link-color: #94a3b8;
+  --ifm-footer-link-hover-color: #00baf9;
+  --ifm-footer-title-color: #f0f6fc;
   background-color: #0c1017 !important;
+  color: #8b949e !important;
   border-top-color: #242c38;
 }
 
@@ -425,8 +417,13 @@ code {
   font-weight: 500;
 }
 
+.footer__title {
+  color: var(--ifm-footer-title-color) !important;
+  font-weight: 600;
+}
+
 .footer__link-item {
-  color: var(--ifm-footer-link-color);
+  color: var(--ifm-footer-link-color) !important;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   transition: color 0.15s ease, background-color 0.15s ease;
@@ -434,7 +431,7 @@ code {
 }
 
 .footer__link-item:hover {
-  color: var(--ifm-footer-link-hover-color);
+  color: var(--ifm-footer-link-hover-color) !important;
   background-color: var(--ifm-color-emphasis-100);
   text-decoration: none;
 }
@@ -446,16 +443,12 @@ code {
 
 .footer__copyright {
   font-size: 0.8rem;
-  color: var(--ifm-footer-color);
+  color: var(--ifm-footer-color) !important;
   padding-top: 0.75rem;
   border-top: 1px solid var(--ifm-color-emphasis-200);
   max-width: 480px;
   margin: 0 auto;
 }
-
-/* ==========================================================================
-   Tables, Alerts, and Content Details
-   ========================================================================== */
 
 table {
   width: 100%;
@@ -501,10 +494,6 @@ table td {
   background-color: rgba(0, 186, 249, 0.08);
 }
 
-/* ==========================================================================
-   Custom Minecraft Fonts (Preserved)
-   ========================================================================== */
-
 @font-face {
   font-family: 'Minecraft';
   src: url('https://raw.githubusercontent.com/Minato-mba/web-apps/main/content/fonts/minecraft.otf') format('opentype');
@@ -519,4 +508,34 @@ table td {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+/* Pure CSS Number Counter Animation */
+@property --num {
+  syntax: '<integer>';
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes countUp {
+  from {
+    --num: 0;
+  }
+}
+
+.animated-count {
+  display: inline-block;
+  counter-reset: num var(--num);
+  animation: countUp var(--duration, 2s) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  font-variant-numeric: tabular-nums;
+}
+
+.animated-count::before {
+  content: counter(num);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-count {
+    animation: none;
+  }
 }
