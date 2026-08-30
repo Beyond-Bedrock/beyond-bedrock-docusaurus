@@ -1,5 +1,31 @@
 [
   {
+    "id": "banner-markers",
+    "slug": "banner-markers",
+    "title": "Banner Markers Add-on",
+    "description": "Bring Java Edition style banner map markers and 3D in-world banner names to Minecraft Bedrock Edition.",
+    "author": {
+      "name": "Minato",
+      "avatar": "img/authors/minato.webp"
+    },
+    "images": [],
+    "tags": [
+      "utility",
+      "maps",
+      "navigation",
+      "tools",
+      "banners"
+    ],
+    "category": "",
+    "downloads": {
+      "Latest": "https://github.com/MinecraftBedrockArabic/banner_markers/releases/download/stable/Banner_Markers_v3.mcaddon"
+    },
+    "rating": 0,
+    "lastUpdated": "2026-08-30T18:30:00",
+    "content": "\n# Banner Markers Add-on\n\n![Banner Markers Thumbnail](/img/addons/banner-markers/thumbnail.webp)\n\nHave you ever wanted to mark your bases, waypoints, farms, and points of interest directly on your in-...",
+    "image": "img/addons/banner-markers/thumbnail.webp"
+  },
+  {
     "id": "better-hooks-add-on",
     "slug": "better-hooks-add-on",
     "title": "Better Hooks Add-on",
