@@ -2,7 +2,7 @@
 id: bit-by-bit
 title: "Bit By Bit Add-on"
 description: "A micro-voxel building addon that breaks down traditional blocks into 2x2x2 grids of smaller sub-units called 'bits' for unprecedented creative freedom and detail."
-image: img/addons/bit-by-bit/thumbnail.png
+image: img/addons/bit-by-bit/thumbnail.webp
 author:
   name: "Minato"
   avatar: img/authors/minato.webp
@@ -25,7 +25,7 @@ downloads:
 
 # Bit By Bit Add-on
 
-![Bit By Bit Thumbnail](/img/addons/bit-by-bit/thumbnail.png)
+![Bit By Bit Thumbnail](/img/addons/bit-by-bit/thumbnail.webp)
 
 **Bit By Bit** is a micro-voxel building addon that completely redefines detail in Minecraft. By breaking down the traditional block grid, it gives you unprecedented creative freedom to sculpt your world with 2x2x2 grids of smaller sub-units called "bits."
 
@@ -65,7 +65,7 @@ downloads:
 - **64 Custom Color Blocks:** Vibrant colored blocks to expand your building palette beyond vanilla limitations
 - **Special Bit Properties:** Magma bits (damage), ice bits (slippery), wood bits (strippable), adaptive light blocks (dynamic brightness)
 
-![Creative inventory overview](/img/addons/bit-by-bit/creative-inventory.png)
+![Creative inventory overview](/img/addons/bit-by-bit/creative-inventory.webp)
 
 <SectionSpacer 
   title="How to Use"
@@ -182,7 +182,7 @@ The **Blueprint** is a powerful utility tool designed to save you time:
 - **Instant Placement:** Place saved configurations instantly
 - **No Manual Rebuilding:** Never manually rebuild the same intricate structures block by block again
 
-![Blueprint item](/img/addons/bit-by-bit/blueprint.png)
+![Blueprint item](/img/addons/bit-by-bit/blueprint.webp)
 
 <SectionSpacer 
   title="Guide Book Controls"
@@ -198,7 +198,7 @@ The **Blueprint** is a powerful utility tool designed to save you time:
 - **Attack:** Close Guide
 - **Sneak + Interact:** Previous page / Open Config (if book is closed)
 
-![In-game guide UI](/img/addons/bit-by-bit/guide-ui.png)
+![In-game guide UI](/img/addons/bit-by-bit/guide-ui.webp)
 
 ---
 
