@@ -1,5 +1,33 @@
 [
   {
+    "id": "bit-by-bit",
+    "slug": "bit-by-bit",
+    "title": "Bit By Bit Add-on",
+    "description": "A micro-voxel building addon that breaks down traditional blocks into 2x2x2 grids of smaller sub-units called 'bits' for unprecedented creative freedom and detail.",
+    "author": {
+      "name": "Minato",
+      "avatar": "img/authors/minato.webp"
+    },
+    "images": [],
+    "tags": [
+      "building",
+      "blocks",
+      "colors",
+      "creative",
+      "construction",
+      "tools",
+      "micro-voxel"
+    ],
+    "category": "",
+    "downloads": {
+      "Latest": "https://github.com/MinecraftBedrockArabic/bit-by-bit/releases/download/Stable/bit.by.bit.mcaddon"
+    },
+    "rating": 0,
+    "lastUpdated": "2026-09-05T21:00:00",
+    "content": "\n# Bit By Bit Add-on\n\n![Bit By Bit Thumbnail](/img/addons/bit-by-bit/thumbnail.png)\n\n**Bit By Bit** is a micro-voxel building addon that completely redefines detail in Minecraft. By breaking down the ...",
+    "image": "img/addons/bit-by-bit/thumbnail.png"
+  },
+  {
     "id": "banner-markers",
     "slug": "banner-markers",
     "title": "Banner Markers Add-on",
