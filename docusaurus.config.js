@@ -33,6 +33,14 @@ export default {
     locales: ['en'],
   },
 
+  scripts: [
+    {
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7865973621978452',
+      async: true,
+      crossorigin: 'anonymous',
+    },
+  ],
+
   trailingSlash: false,
   plugins: [
     [
@@ -92,6 +100,10 @@ export default {
           content: production
             ? 'index, follow'
             : 'noindex, nofollow',
+        },
+        {
+          name: 'google-adsense-account',
+          content: 'ca-pub-7865973621978452',
         },
       ],
       colorMode: {

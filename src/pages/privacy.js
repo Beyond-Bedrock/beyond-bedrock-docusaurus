@@ -10,7 +10,7 @@ export default function Privacy() {
       <main className="container margin-vert--lg">
         <Heading as="h1">Privacy Policy</Heading>
 
-        <p>Last updated: July 02, 2025</p>
+        <p>Last updated: September 6, 2026</p>
         <p>
           At Beyond Bedrock, we take your privacy seriously. This Privacy Policy
           explains how we collect, use, disclose, and safeguard your information
@@ -21,15 +21,6 @@ export default function Privacy() {
         <Heading as="h2">Information We Collect</Heading>
         <p>We may collect information about you in various ways, including:</p>
         <ul>
-          <li>
-            <strong>Personal Data:</strong> When you register an account, we
-            collect your username, email address, and Discord information through
-            OAuth authentication.
-          </li>
-          <li>
-            <strong>User Content:</strong> Any content you upload to our platform,
-            including posts, comments, and cover images.
-          </li>
           <li>
             <strong>Usage Data:</strong> Information about how you interact with
             our website, including your IP address, browser type, pages visited,
@@ -50,6 +41,11 @@ export default function Privacy() {
               <li>
                 <strong>Analytics Cookies:</strong> Help us understand how users
                 interact with our site
+              </li>
+              <li>
+                <strong>Advertising Cookies:</strong> Used by Google AdSense to
+                serve personalized advertisements based on your browsing history
+                and interests
               </li>
             </ul>
           </li>
@@ -76,8 +72,7 @@ export default function Privacy() {
         <Heading as="h2">Third-Party Services</Heading>
         <p>We use several third-party services that may collect and process your data:</p>
         <ul>
-          <li><strong>Cloudinary:</strong> For hosting and processing user-uploaded images and cover photos</li>
-          <li><strong>Discord OAuth:</strong> For user authentication and profile information</li>
+          <li><strong>Google AdSense:</strong> For displaying advertisements on our website. Google may use cookies to serve ads based on your prior visits to this website or other websites</li>
           <li><strong>Analytics Services:</strong> To understand how users interact with our platform</li>
         </ul>
         <p>
@@ -162,7 +157,7 @@ export default function Privacy() {
           your privacy rights, please contact us at: contact@beyondbedrock.org.
         </p>
 
-        <p>Last Updated: July 02, 2025</p>
+        <p>Last Updated: September 6, 2026</p>
       </main>
     </Layout>
   );
